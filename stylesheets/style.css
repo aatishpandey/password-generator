@@ -25,8 +25,8 @@ body{
     width: 80%;
     height: 90%;
     margin: auto;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .large-text{
@@ -54,7 +54,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 300px;
+    width: 50%;
 }
 
 .input-length{
@@ -63,6 +63,12 @@ body{
     font-size: 1.1rem;
     font-weight: 550;
 }
+
+.error-msg{
+    align-self: center;
+    font-size: 1.2rem;
+}
+
 
 .button{
     width:fit-content ;
