@@ -3,6 +3,8 @@ let generateBtn = document.querySelector(".generate-btn");
 let toggleBtn = document.querySelector(".theme-toggle");
 let boxOne = document.querySelector(".box-one");
 let boxTwo = document.querySelector(".box-two");
+let copyBtn1 = document.querySelector(".copy-btn1");
+let copyBtn2 = document.querySelector(".copy-btn2");
 
 let theme = "dark";
 
@@ -27,7 +29,7 @@ toggleBtn.addEventListener("click", () => {
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9","~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?",
 "/"];
 
-let charLength = characters.length
+let charLength = characters.length;
 
 let generatePassword = () => {
     let passwordFirst = passwordSecond = "";
@@ -47,4 +49,13 @@ let generatePassword = () => {
 
 generateBtn.addEventListener("click",() => {
     generatePassword();
+})
+
+//copy password
+copyBtn1.addEventListener("click",() => {
+    navigator.clipboard.writeText(boxOne.textContent);
+})
+
+copyBtn2.addEventListener("click",() => {
+    navigator.clipboard.writeText(boxOne.textContent);
 })

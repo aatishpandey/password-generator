@@ -73,6 +73,7 @@ hr{
     justify-content:space-between;
     flex-wrap: wrap;
     width: 80%;
+    align-items: center;
 }
 
 .password{
@@ -84,4 +85,9 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.copy-btn1,.copy-btn2{
+    font-size: 2rem;
+    cursor: pointer;
 }
