@@ -1,0 +1,72 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.large-text{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.small-text{
+    font-size: 2.5rem;
+}
+
+.head-one{
+    color: rgba(43, 40, 58, 1);
+}
+
+.head-two{
+    color: rgba(16, 185, 129, 1);
+}
+
+.head-three{
+    color: rgba(107, 114, 128, 1);
+}
+
+.button{
+    width:fit-content ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgba(16, 185, 129, 1);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 550;
+}
+
+hr{
+    color: rgba(213, 212, 216, 1);
+}
+
+.password-container{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.password{
+    background-color: rgba(39, 53, 73, 1);
+    width: 415px;
+    height: 60px;
+    border-radius: 10px;
+    color: rgba(93, 239, 146, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-two{
+    margin-left: 50px;
+}
