@@ -50,6 +50,20 @@ body{
     color: rgba(107, 114, 128, 1);
 }
 
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.input-length{
+    outline: 1px solid rgba(16, 185, 129, 1);
+    width: 50px;
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
 .button{
     width:fit-content ;
     font-size: 1.2rem;
@@ -89,4 +103,12 @@ hr{
 .copy-btn1,.copy-btn2{
     font-size: 2rem;
     cursor: pointer;
+}
+
+.copy-btn1:hover{
+    color: rgba(16, 185, 129, 1);
+}
+
+.copy-btn2:hover{
+    color: rgba(16, 185, 129, 1);
 }

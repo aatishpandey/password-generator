@@ -5,6 +5,20 @@ let boxOne = document.querySelector(".box-one");
 let boxTwo = document.querySelector(".box-two");
 let copyBtn1 = document.querySelector(".copy-btn1");
 let copyBtn2 = document.querySelector(".copy-btn2");
+let inputLength = document.querySelector(".input-length");
+let errorMsg = document.querySelector(".error-msg");
+let passwordLength = inputLength.value;
+
+//set password length
+inputLength.addEventListener("change", () => {
+    inputLength.value > 15 ? (inputLength.value = 15 ,errorMsg.textContent = "Enter Length <=15"):
+                             inputLength.value < 1 ?
+                             (inputLength.value = 1, errorMsg.textContent = "Enter Length >1"):
+                             (inputLength, errorMsg.textContent = "Thanks! 😊");
+
+    passwordLength = inputLength.value;
+})
+
 
 let theme = "dark";
 
@@ -34,7 +48,7 @@ let charLength = characters.length;
 let generatePassword = () => {
     let passwordFirst = passwordSecond = "";
 
-    for(let i=0;i<15;i++){
+    for(let i=0;i<passwordLength;i++){
         let randomNumFirst = Math.floor(Math.random()*charLength);
         let randomNumSecond = Math.floor(Math.random()*charLength);
 

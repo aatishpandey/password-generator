@@ -9,9 +9,7 @@
     <!-- css stylesheet -->
     <link id="pageStyle" rel="stylesheet" href="/stylesheets/style-dark-theme.css">
 
-    <!-- font awesome kit -->
-    <script src="https://kit.fontawesome.com/de6fba1868.js" crossorigin="anonymous"></script>
-</head>
+
 <body>
 
     <!-- nav bar -->
@@ -29,7 +27,12 @@
 
 
         <!-- generate button -->
-        <button class="button generate-btn">Generate Password</button>
+        <div class="button-container">
+            <button class="button generate-btn">Generate Password</button>
+            <input type="number" class="input-length" min="0" max="15" value="15">
+            <div class="error-msg"></div>
+        </div>
+
 
         <!-- horizontal line -->
         <hr>
@@ -43,6 +46,10 @@
         </div>
 
     </div>
+
     <script src="/index.js"></script>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/de6fba1868.js" crossorigin="anonymous"></script>
+    </head>
 </body>
 </html>
