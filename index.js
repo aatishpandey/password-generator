@@ -1,3 +1,4 @@
+//variables declaration
 let documentStyleSheet = document.querySelector("#pageStyle");
 let generateBtn = document.querySelector(".generate-btn");
 let toggleBtn = document.querySelector(".theme-toggle");
@@ -8,6 +9,7 @@ let copyBtn2 = document.querySelector(".copy-btn2");
 let inputLength = document.querySelector(".input-length");
 let errorMsg = document.querySelector(".error-msg");
 let passwordLength = inputLength.value;
+let theme = "light";
 
 //set password length
 inputLength.addEventListener("change", () => {
@@ -20,22 +22,20 @@ inputLength.addEventListener("change", () => {
 })
 
 
-let theme = "dark";
-
 //theme toggle
 toggleBtn.addEventListener("click", () => {
-
     switch (theme) {
-        case "dark": documentStyleSheet.setAttribute("href", "/stylesheets/style-dark-theme.css")
+        case "dark": documentStyleSheet.setAttribute("href", "/stylesheets/style-dark-theme.css");
+                     theme = "light";
             break;
 
         case "light": documentStyleSheet.setAttribute("href", "/stylesheets/style.css");
+                      theme = "dark";
             break;
 
-        default: documentStyleSheet.setAttribute("href", "/stylesheets/style-dark-theme.css")
+        default: theme;
             break;
     }
-    theme === "dark" ? theme = "light" : theme = "dark";
 
 })
 
